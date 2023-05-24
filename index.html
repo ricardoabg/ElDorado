@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Visualizador de Animaciones</title>
+  <title>Visualizador de Animaciones Lottie</title>
   <style>
     #animation-container {
       margin: 0 auto;
@@ -47,6 +47,15 @@
       path: animationData
     });
     var animationData = 'Separación 2.json';
+    var animationContainer = document.getElementById('animation-container');
+    var animation = bodymovin.loadAnimation({
+      container: animationContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: animationData
+    });
+    var animationData = 'Cohete2.json';
     var animationContainer = document.getElementById('animation-container');
     var animation = bodymovin.loadAnimation({
       container: animationContainer,
